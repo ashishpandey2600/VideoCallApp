@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:videocallapp/callLogScreen.dart';
 import 'package:videocallapp/homepage.dart';
 
 void main() {
@@ -10,9 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: HomePage(),
-
+    return const MaterialApp(
+      home: HomePage(callId: "54321",userId: "1234",userName: "Ashish"),
+      // home: CallLogScreen(),
     );
   }
 }
